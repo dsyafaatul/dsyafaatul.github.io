@@ -1,1 +1,29 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Welcome</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+		<h1 id="title">D. Syafa'atul Anbiya</h1>
+
+		<script>
+			function animasi_text(el) {
+				let pos = 0;
+				let delay = 200;
+				let text = el.textContent;
+				el.textContent = '';
+
+				let itv = setInterval(function () {
+					if (pos >= text.length) return clearInterval(itv);
+					el.textContent += text[pos];
+					pos++;
+				}, delay);
+			}
+			animasi_text(title);
+		</script>
+	</body>
+</html>
