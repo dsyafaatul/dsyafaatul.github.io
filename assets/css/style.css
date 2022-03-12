@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	background-color: midnightblue;
+	font-family: 'Courier New', Courier, monospace;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	color: white;
+	text-align: center;
+	margin: 0;
+}
